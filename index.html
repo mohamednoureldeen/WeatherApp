@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- bootstrap css link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-light p-5"
+        data-bs-theme="dark"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <div><img src="./images/logo.png" alt="" /></div>
+          </a>
+          <div class="logo-type text-white-50">
+            <h3 class="site-title fw-bold">Weather</h3>
+            <small class="site-description fw-lighter">tagline goes here</small>
+          </div>
+          <button
+            class="navbar-toggler d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class=" fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav gap-5 ms-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#" aria-current="page"
+                  >Home <span class="visually-hidden">(current)</span></a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <section>
+      <div class="hero">
+        <div class="container">
+          <form class="find-location">
+            <input
+              type="text"
+              placeholder="Find your location..."
+              id="search"
+            />
+            <input type="button" value="Find" id="submit" />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- weather -->
+    <section class="weather-area">
+      <div class="container forecast-container">
+        <div
+          class="row d-flex forecast justify-content-center"
+          id="forecast"
+        ></div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+      <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <form action="#" class="subscribe-form">
+                <input
+                  type="text"
+                  placeholder="Enter your email to subscribe..."
+                />
+                <input type="submit" value="Subscribe" />
+              </form>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <div class="social-links ps-5">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <p class="copyright">
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <!-- javascript -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
