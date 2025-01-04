@@ -8,17 +8,13 @@ const searchInput = document.getElementById('search');
 async function fetchWeather(city) {
 
 
-    const responce = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=054885e717db46e8b3293716240712&q=${city}&days=3`);
+    const  response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=054885e717db46e8b3293716240712&q=${city}&days=3`);
 
-    if (responce.ok) {
-        const wetherData = await responce.json();
+    if (response.ok) {
+        const wetherData = await response.json();
         displayWeather(wetherData);
         displayForecast(wetherData);
-        
-        
-
         console.log(wetherData);
-        
     }                           
 }
 
